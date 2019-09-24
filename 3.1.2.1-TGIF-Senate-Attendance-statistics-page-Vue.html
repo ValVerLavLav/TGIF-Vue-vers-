@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Senate Attendance statistics page</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="./ClientAsset(s)/stylesheet/2-TGIF.css">
+    
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    </head>
+    
+    <body>
+        
+        <div class="MainContainer">
+
+            <header>
+
+                <div><!-- <p>https://www.whitehouse.gov/the_press_office/TransparencyandOpenGovernment</p> --></div>
+        
+                <div id="TGIFLog">
+                    <a href="2.1.1-TGIF-Home.html">
+                        <img height="100" width="100" src="./ClientAsset(s)/TGIF_logo.png">
+                    </a>
+                </div>
+                
+                <div id="ConEMaAdd">
+                    <div id="EnvLog">
+                    <img height="20" width="20" src="./ClientAsset(s)/email-envelope-outline-shape-with-rounded-corners.svg" alt="">
+                    </div>
+        
+                    <div id=EmaAdd>
+                    <a href="mailto: info@tgif.net"><p>info@tgif.net</p></a>
+                    </div>
+                </div>
+                    
+            </header>
+                    
+                    
+                    
+            <div>
+                <nav class="navbar navbar-inverse">
+                    <div class="navBarContainer">
+                        <ul class="nav">
+                            <li class="nav-item"><a class="nav-link" href="2.1.1-TGIF-Home.html">Home</a></li>
+            
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Congress 113</a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="2.1.2.2-TGIF-House-data.html">House</a></li>
+                                    <li><a class="dropdown-item" href="2.1.2.1-TGIF-Senate-data.html">Senate</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Attendance</a>                
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="3.1.2.2-TGIF-House-Attendance-statistics-page.html">House</a></li>
+                                    <li><a class="dropdown-item" href="3.1.2.1-TGIF-Senate-Attendance-statistics-page.html">Senate</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" data-toggle="dropdown" href="#">Party Loyalty</a>                
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="3.1.1.2-TGIF-House-Party-Loyalty-statistics-page.html">House</a></li>
+                                    <li><a class="dropdown-item" href="3.1.1.1-TGIF-Senate-Party-Loyalty-statistics-page.html">Senate</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+    
+
+
+            <div class="MainSection">
+
+                <div>
+                    <h1>Attendance</h1>
+                    <p>The Constitution specifies that a majority of members constitutes a quorum to do business in each house. Representatives and senators rarely force the presence of a quorum by demanding quorum calls; thus, in most cases, debates continue even if a majority is not present.</p>
+
+                    <p>The Senate uses roll-call votes; a clerk calls out the names of all the senators, each senator stating "aye" or "no" when his or her name is announced. The House reserves roll-call votes for the most formal matters, as a roll-call of all 435 representatives takes quite some time; normally, members vote by electronic device. In the case of a tie, the motion in question fails. In the Senate, the Vice President may (if present) cast the tiebreaking vote.</p>
+                    
+                    <h2>Senate at a glance</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Party</th>
+                                <th>Number of Reps</th>
+                                <th>% Voted with Prty</th>
+                            </tr>
+                        </thead>
+                        <tbody id="senAtAGla">
+                            <!-- <tr>
+                                <td>Republican</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <td>Democrat</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <td>Independent</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+
+                    <h2>Least Engaged (Bottom 10% Attendance)</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Number of Missed Votes</th>
+                                <th>% Missed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="leaEngSen">
+                            <!-- <tr>
+                                <td>Republican</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <td>Democrat</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <td>Independent</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+
+                    <h2>Most Engaged (Top 10% Attendance)</h2>
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Name</th>
+                                <th>Number of Missed Votes</th>
+                                <th>% Missed</th>
+                            </tr>
+                        </thead>
+                        <tbody id="mosEngSen">
+                            <!-- <tr>
+                                <td>Republican</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <td>Democrat</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr>
+                            <tr>
+                                <td>Independent</td>
+                                <td>--</td>
+                                <td>--</td>
+                            </tr> -->
+                        </tbody>
+                    </table>
+
+                </div>
+        
+            </div>
+
+            <footer>
+                <div id="FooTex">
+                    <p> &#169; 2019 TGIF | All Rights Reserved</p>
+                </div>
+            </footer>
+
+        </div>
+
+
+        <!-- <script src="./2.5.1-TGIF-pro-congress-113-Senate-JS-API-data.js"></script> -->
+        <script src="./2.3.1-TGIF-SenPL&A-Statistics.js"></script>
+
+    </body>
+
+</html>
